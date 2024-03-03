@@ -124,17 +124,17 @@ export const SUPPORTED_NETWORKS: Record<
     rpcUrls: ['https://polygon-rpc.com'], // ['https://matic-mainnet.chainstacklabs.com/'],
     blockExplorerUrls: ['https://polygonscan.com'],
   },
-  [ChainId.ZETA]: {
-    chainId: '0x1b58',
-    chainName: 'ZetaChain Mainnet',
-    nativeCurrency: {
-      name: 'ZETA',
-      symbol: 'ZETA',
-      decimals: 18,
-    },
-    rpcUrls: ['https://zetachain-evm.blockpi.network/v1/rpc/public'],
-    blockExplorerUrls: ['https://explorer.zetachain.com'],
-  },
+  // [ChainId.ZETA]: {
+  //   chainId: '0x1b58',
+  //   chainName: 'ZetaChain Mainnet',
+  //   nativeCurrency: {
+  //     name: 'ZETA',
+  //     symbol: 'ZETA',
+  //     decimals: 18,
+  //   },
+  //   rpcUrls: ['https://zetachain-evm.blockpi.network/v1/rpc/public'],
+  //   blockExplorerUrls: ['https://explorer.zetachain.com'],
+  // },
   [ChainId.ZETA_TESTNET]: {
     chainId: '0x1b59',
     chainName: 'ZetaChain Athens 3 Testnet',

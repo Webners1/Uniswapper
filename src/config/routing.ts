@@ -85,7 +85,7 @@ const WRAPPED_NATIVE_ONLY: ChainTokenList = {
   [ChainId.METIS]: [WNATIVE[ChainId.METIS]],
   [ChainId.ARBITRUM_NOVA]: [WNATIVE[ChainId.ARBITRUM_NOVA]],
   [ChainId.BOBA_AVAX]: [WNATIVE[ChainId.BOBA_AVAX]],
-  [ChainId.ZETA]: [WNATIVE[ChainId.ZETA]],
+  // [ChainId.ZETA]: [WNATIVE[ChainId.ZETA]],
   [ChainId.ZETA_TESTNET]: [WNATIVE[ChainId.ZETA_TESTNET]],
 }
 
@@ -708,7 +708,7 @@ export const COMMON_BASES: ChainTokenList = {
   ],
   [ChainId.BOBA_AVAX]: [...WRAPPED_NATIVE_ONLY[ChainId.BOBA_AVAX], BOBA_AVAX.AVAX],
 
-  [ChainId.ZETA]: [...WRAPPED_NATIVE_ONLY[ChainId.ZETA], zeta.GETH, zeta.EMMET, zeta.ZNT],
+  // [ChainId.ZETA]: [...WRAPPED_NATIVE_ONLY[ChainId.ZETA], zeta.GETH, zeta.EMMET, zeta.ZNT],
   [ChainId.ZETA_TESTNET]: [
     ...WRAPPED_NATIVE_ONLY[ChainId.ZETA_TESTNET],
     zetaTestnet.GETH,
@@ -878,7 +878,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
     ARBITRUM_NOVA.WBTC,
   ],
   [ChainId.BOBA_AVAX]: [...WRAPPED_NATIVE_ONLY[ChainId.BOBA_AVAX], BOBA_AVAX.AVAX],
-  [ChainId.ZETA]: [...WRAPPED_NATIVE_ONLY[ChainId.ZETA], zeta.GETH, zeta.EMMET, zeta.ZNT],
+  // [ChainId.ZETA]: [...WRAPPED_NATIVE_ONLY[ChainId.ZETA], zeta.GETH, zeta.EMMET, zeta.ZNT],
   [ChainId.ZETA_TESTNET]: [
     ...WRAPPED_NATIVE_ONLY[ChainId.ZETA_TESTNET],
     zetaTestnet.GETH,

@@ -253,6 +253,7 @@
     "showDetails": true
   },
   "dependencies": {
+    "@uniswap/sdk-core": "^4.1.4",
     "multiformats": "^11.0.2",
     "next-language-detector": "^1.0.2",
     "next-locales": "^0.2.2"
