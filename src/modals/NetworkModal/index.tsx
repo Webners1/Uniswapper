@@ -58,17 +58,17 @@ export const SUPPORTED_NETWORKS: Record<
   //   rpcUrls: ['https://rinkeby.infura.io/v3'],
   //   blockExplorerUrls: ['https://rinkeby.etherscan.com'],
   // },
-  // [ChainId.GÖRLI]: {
-  //   chainId: '0x5',
-  //   chainName: 'Görli',
-  //   nativeCurrency: {
-  //     name: 'Ethereum',
-  //     symbol: 'ETH',
-  //     decimals: 18,
-  //   },
-  //   rpcUrls: ['https://goerli.infura.io/v3'],
-  //   blockExplorerUrls: ['https://goerli.etherscan.com'],
-  // },
+  [ChainId.GÖRLI]: {
+    chainId: '0x5',
+    chainName: 'Görli',
+    nativeCurrency: {
+      name: 'Ethereum',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: ['https://goerli.infura.io/v3'],
+    blockExplorerUrls: ['https://goerli.etherscan.com'],
+  },
   // [ChainId.KOVAN]: {
   //   chainId: '0x2A',
   //   chainName: 'Kovan',
@@ -354,7 +354,7 @@ const NetworkModal: FC<{ switchNetwork: (targetChain: number) => void }> = ({ sw
         <HeadlessUiModal.Header header={i18n._(t`Select a network`)} onClose={toggleNetworkModal} />
         <div className="grid grid-flow-row-dense grid-cols-1 gap-4 overflow-y-auto md:grid-cols-2">
           {[
-            ChainId.ETHEREUM,
+            ChainId.GÖRLI,
             // ChainId.ARBITRUM,
             // ChainId.ARBITRUM_NOVA,
             // ChainId.MATIC,
