@@ -9,6 +9,7 @@ const BLOCKCHAIN = {
   [ChainId.ETHEREUM]: 'ethereum',
   [ChainId.BSC]: 'bsc',
   [ChainId.CELO]: 'celo',
+  [ChainId.SEPOLIA]: 'ethereum',
   [ChainId.FANTOM]: 'fantom',
   [ChainId.AVALANCHE_TESTNET]: 'fuji',
   [ChainId.FUSE]: 'fuse',
@@ -145,6 +146,10 @@ const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({ currency, size = '
         return [...uriLocations, ...defaultUrls, UNKNOWN_ICON]
       }
       if (currency.symbol == 'BART') {
+        return ['https://i.imgur.com/7oFiXmg.png']
+      }
+
+      if (currency.symbol == 'USDC') {
         return ['https://i.imgur.com/7oFiXmg.png']
       }
 
