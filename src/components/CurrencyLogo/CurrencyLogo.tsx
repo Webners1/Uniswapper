@@ -85,6 +85,7 @@ const LOGO: Record<number, string> = {
   [ChainId.RINKEBY]: EthereumLogo,
   [ChainId.ROPSTEN]: EthereumLogo,
   [ChainId.GÖRLI]: EthereumLogo,
+  [ChainId.SEPOLIA]: EthereumLogo,
   [ChainId.FANTOM]: FtmLogo,
   [ChainId.FANTOM_TESTNET]: FtmLogo,
   [ChainId.MATIC]: MaticLogo,
