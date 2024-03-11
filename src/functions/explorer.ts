@@ -229,8 +229,8 @@ const chains: ChainObject = {
   //   link: 'https://explorer.zetachain.com',
   //   builder: explorers.etherscan,
   // },
-  [ChainId.ZETA_TESTNET]: {
-    link: 'https://athens.explorer.zetachain.com',
+  [ChainId.SEPOLIA]: {
+    link: 'https://sepolia.etherscan.com',
     builder: explorers.etherscan,
   },
 }

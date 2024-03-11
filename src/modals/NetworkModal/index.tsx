@@ -135,16 +135,16 @@ export const SUPPORTED_NETWORKS: Record<
   //   rpcUrls: ['https://zetachain-evm.blockpi.network/v1/rpc/public'],
   //   blockExplorerUrls: ['https://explorer.zetachain.com'],
   // },
-  [ChainId.ZETA_TESTNET]: {
-    chainId: '0x1b59',
-    chainName: 'ZetaChain Athens 3 Testnet',
+  [ChainId.SEPOLIA]: {
+    chainId: 'aa36a7',
+    chainName: 'Sepolia Testnet',
     nativeCurrency: {
-      name: 'ZETA',
-      symbol: 'ZETA',
+      name: 'ETH',
+      symbol: 'ETH',
       decimals: 18,
     },
-    rpcUrls: ['https://zetachain-athens-evm.blockpi.network/v1/rpc/public'],
-    blockExplorerUrls: ['https://athens.explorer.zetachain.com'],
+    rpcUrls: ['https://sepolia.etherscan.com'],
+    blockExplorerUrls: ['https://sepolia.etherscan.com'],
   },
   // [ChainId.HECO]: {
   //   chainId: '0x80',
@@ -354,7 +354,8 @@ const NetworkModal: FC<{ switchNetwork: (targetChain: number) => void }> = ({ sw
         <HeadlessUiModal.Header header={i18n._(t`Select a network`)} onClose={toggleNetworkModal} />
         <div className="grid grid-flow-row-dense grid-cols-1 gap-4 overflow-y-auto md:grid-cols-2">
           {[
-            ChainId.GÖRLI,
+            // ChainId.GÖRLI,
+            ChainId.SEPOLIA,
             // ChainId.ARBITRUM,
             // ChainId.ARBITRUM_NOVA,
             // ChainId.MATIC,

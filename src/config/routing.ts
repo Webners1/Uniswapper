@@ -5,6 +5,7 @@ import * as ARBITRUM from './tokens/arbitrum'
 import * as ARBITRUM_NOVA from './tokens/arbitrum-nova'
 import * as AVALANCHE from './tokens/avalanche'
 import * as BOBA_AVAX from './tokens/boba-avax'
+import * as SEPOLIA from './tokens/sepolia'
 import * as BSC from './tokens/bsc'
 import * as CELO from './tokens/celo'
 import * as ETHEREUM from './tokens/ethereum'
@@ -23,7 +24,6 @@ import * as PALM from './tokens/palm'
 import * as TELOS from './tokens/telos'
 import * as XDAI from './tokens/xdai'
 import * as zeta from './tokens/zeta'
-import * as zetaTestnet from './tokens/zetaTestnet'
 
 type ChainTokenList = {
   readonly [chainId: number]: Token[]
@@ -85,8 +85,9 @@ const WRAPPED_NATIVE_ONLY: ChainTokenList = {
   [ChainId.METIS]: [WNATIVE[ChainId.METIS]],
   [ChainId.ARBITRUM_NOVA]: [WNATIVE[ChainId.ARBITRUM_NOVA]],
   [ChainId.BOBA_AVAX]: [WNATIVE[ChainId.BOBA_AVAX]],
+  [ChainId.SEPOLIA]: [WNATIVE[ChainId.SEPOLIA]],
   // [ChainId.ZETA]: [WNATIVE[ChainId.ZETA]],
-  [ChainId.ZETA_TESTNET]: [WNATIVE[ChainId.ZETA_TESTNET]],
+  // [ChainId.ZETA_TESTNET]: [WNATIVE[ChainId.ZETA_TESTNET]],
 }
 
 // used to construct intermediary pairs for trading
@@ -279,6 +280,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     ARBITRUM_NOVA.WBTC,
   ],
   [ChainId.BOBA_AVAX]: [...WRAPPED_NATIVE_ONLY[ChainId.BOBA_AVAX], BOBA_AVAX.AVAX],
+  [ChainId.SEPOLIA]: [...WRAPPED_NATIVE_ONLY[ChainId.SEPOLIA], SEPOLIA.USDT],
 }
 
 export const ADDITIONAL_BASES: {
@@ -362,6 +364,9 @@ export const ADDITIONAL_BASES: {
   [ChainId.AVALANCHE]: {
     [AVALANCHE.FRAX.address]: [AVALANCHE.FXS],
     [AVALANCHE.FXS.address]: [AVALANCHE.FRAX],
+  },
+  [ChainId.SEPOLIA]: {
+    [SEPOLIA.WETH.address]: [SEPOLIA.USDT],
   },
 }
 
@@ -707,14 +712,15 @@ export const COMMON_BASES: ChainTokenList = {
     ARBITRUM_NOVA.BRICK,
   ],
   [ChainId.BOBA_AVAX]: [...WRAPPED_NATIVE_ONLY[ChainId.BOBA_AVAX], BOBA_AVAX.AVAX],
+  [ChainId.SEPOLIA]: [...WRAPPED_NATIVE_ONLY[ChainId.BOBA_AVAX], BOBA_AVAX.AVAX],
 
   // [ChainId.ZETA]: [...WRAPPED_NATIVE_ONLY[ChainId.ZETA], zeta.GETH, zeta.EMMET, zeta.ZNT],
-  [ChainId.ZETA_TESTNET]: [
-    ...WRAPPED_NATIVE_ONLY[ChainId.ZETA_TESTNET],
-    zetaTestnet.GETH,
-    zetaTestnet.EMMET,
-    zetaTestnet.ZNT,
-  ],
+  // [ChainId.ZETA_TESTNET]: [
+  //   ...WRAPPED_NATIVE_ONLY[ChainId.ZETA_TESTNET],
+  //   zetaTestnet.GETH,
+  //   zetaTestnet.EMMET,
+  //   zetaTestnet.ZNT,
+  // ],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -879,11 +885,10 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ],
   [ChainId.BOBA_AVAX]: [...WRAPPED_NATIVE_ONLY[ChainId.BOBA_AVAX], BOBA_AVAX.AVAX],
   // [ChainId.ZETA]: [...WRAPPED_NATIVE_ONLY[ChainId.ZETA], zeta.GETH, zeta.EMMET, zeta.ZNT],
-  [ChainId.ZETA_TESTNET]: [
-    ...WRAPPED_NATIVE_ONLY[ChainId.ZETA_TESTNET],
-    zetaTestnet.GETH,
-    zetaTestnet.EMMET,
-    zetaTestnet.ZNT,
+  [ChainId.SEPOLIA]: [
+    ...WRAPPED_NATIVE_ONLY[ChainId.SEPOLIA],
+    SEPOLIA.USDT,
+
   ],
 }
 

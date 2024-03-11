@@ -1,9 +1,10 @@
 export declare enum ChainId {
     ETHEREUM = 1,
+    SEPOLIA = 11155111,
+    RAIL = 6278,
+    RAIL_TESTNET = 24116,
     ROPSTEN = 3,
     RINKEBY = 4,
-    ZETA_TESTNET = 7001,
-    OPBNB = 204,
     GÖRLI = 5,
     KOVAN = 42,
     MATIC = 137,
