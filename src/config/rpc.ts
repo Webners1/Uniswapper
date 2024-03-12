@@ -37,7 +37,7 @@ const RPC = {
   [ChainId.ARBITRUM_NOVA]: 'https://a4ba.arbitrum.io/rpc',
   [ChainId.BOBA_AVAX]: 'https://avax.boba.network',
   [7000]: 'https://zetachain-evm.blockpi.network/v1/rpc/public',
-  [ChainId.SEPOLIA]: 'https://ethereum-sepolia-rpc.publicnode.com',
+  // [ChainId.SEPOLIA]: 'https://ethereum-sepolia-rpc.publicnode.com',
 }
 
 export default RPC

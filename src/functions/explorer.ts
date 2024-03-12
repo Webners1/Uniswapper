@@ -229,10 +229,10 @@ const chains: ChainObject = {
   //   link: 'https://explorer.zetachain.com',
   //   builder: explorers.etherscan,
   // },
-  [ChainId.SEPOLIA]: {
-    link: 'https://sepolia.etherscan.com',
-    builder: explorers.etherscan,
-  },
+  // [ChainId.SEPOLIA]: {
+  //   link: 'https://sepolia.etherscan.com',
+  //   builder: explorers.etherscan,
+  // },
 }
 
 export function getExplorerLink(

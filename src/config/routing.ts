@@ -85,7 +85,7 @@ const WRAPPED_NATIVE_ONLY: ChainTokenList = {
   [ChainId.METIS]: [WNATIVE[ChainId.METIS]],
   [ChainId.ARBITRUM_NOVA]: [WNATIVE[ChainId.ARBITRUM_NOVA]],
   [ChainId.BOBA_AVAX]: [WNATIVE[ChainId.BOBA_AVAX]],
-  [ChainId.SEPOLIA]: [WNATIVE[ChainId.SEPOLIA]],
+  // [ChainId.SEPOLIA]: [WNATIVE[ChainId.SEPOLIA]],
   // [ChainId.ZETA]: [WNATIVE[ChainId.ZETA]],
   // [ChainId.ZETA_TESTNET]: [WNATIVE[ChainId.ZETA_TESTNET]],
 }
@@ -280,7 +280,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     ARBITRUM_NOVA.WBTC,
   ],
   [ChainId.BOBA_AVAX]: [...WRAPPED_NATIVE_ONLY[ChainId.BOBA_AVAX], BOBA_AVAX.AVAX],
-  [ChainId.SEPOLIA]: [...WRAPPED_NATIVE_ONLY[ChainId.SEPOLIA], SEPOLIA.USDT],
+  // [ChainId.SEPOLIA]: [...WRAPPED_NATIVE_ONLY[ChainId.SEPOLIA], SEPOLIA.USDT],
 }
 
 export const ADDITIONAL_BASES: {
@@ -365,9 +365,9 @@ export const ADDITIONAL_BASES: {
     [AVALANCHE.FRAX.address]: [AVALANCHE.FXS],
     [AVALANCHE.FXS.address]: [AVALANCHE.FRAX],
   },
-  [ChainId.SEPOLIA]: {
-    [SEPOLIA.WETH.address]: [SEPOLIA.USDT],
-  },
+  // [ChainId.SEPOLIA]: {
+  //   [SEPOLIA.WETH.address]: [SEPOLIA.USDT],
+  // },
 }
 
 /**
@@ -712,7 +712,7 @@ export const COMMON_BASES: ChainTokenList = {
     ARBITRUM_NOVA.BRICK,
   ],
   [ChainId.BOBA_AVAX]: [...WRAPPED_NATIVE_ONLY[ChainId.BOBA_AVAX], BOBA_AVAX.AVAX],
-  [ChainId.SEPOLIA]: [...WRAPPED_NATIVE_ONLY[ChainId.BOBA_AVAX], BOBA_AVAX.AVAX],
+  // [ChainId.SEPOLIA]: [...WRAPPED_NATIVE_ONLY[ChainId.SEPOLIA], SEPOLIA.USDT],
 
   // [ChainId.ZETA]: [...WRAPPED_NATIVE_ONLY[ChainId.ZETA], zeta.GETH, zeta.EMMET, zeta.ZNT],
   // [ChainId.ZETA_TESTNET]: [
@@ -885,11 +885,11 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ],
   [ChainId.BOBA_AVAX]: [...WRAPPED_NATIVE_ONLY[ChainId.BOBA_AVAX], BOBA_AVAX.AVAX],
   // [ChainId.ZETA]: [...WRAPPED_NATIVE_ONLY[ChainId.ZETA], zeta.GETH, zeta.EMMET, zeta.ZNT],
-  [ChainId.SEPOLIA]: [
-    ...WRAPPED_NATIVE_ONLY[ChainId.SEPOLIA],
-    SEPOLIA.USDT,
+  // [ChainId.SEPOLIA]: [
+  //   ...WRAPPED_NATIVE_ONLY[ChainId.SEPOLIA],
+  //   SEPOLIA.USDT,
 
-  ],
+  // ],
 }
 
 export const PINNED_PAIRS: { readonly [chainId: number]: [Token, Token][] } = {

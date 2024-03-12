@@ -76,7 +76,7 @@ const InformationDisclosure = ({ farm }) => {
         <Typography variant="xs">
           {i18n._(t`Approve and then deposit your`)}
           {` `}
-          {farm.pair.type === PairType.KASHI ? `KMP` : farm.pair.type === PairType.SWAP ? `BSP` : 'SCPLP'}
+          {farm.pair.type === PairType.KASHI ? `KMP` : farm.pair.type === PairType.SWAP ? `LP` : 'SCPLP'}
           {` `}
           {i18n._(t`tokens into the farm to start earning rewards.`)}
         </Typography>
