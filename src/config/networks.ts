@@ -34,6 +34,7 @@ export const NETWORK_ICON: Record<number, string> = {
   // [ChainId.ROPSTEN]: Ropsten,
   // [ChainId.RINKEBY]: Rinkeby,
   [ChainId.GÖRLI]: Goerli,
+  [ChainId.BIT]: Goerli,
   // [ChainId.KOVAN]: Kovan,
   // [ChainId.FANTOM]: Fantom,
   // [ChainId.FANTOM_TESTNET]: Fantom,

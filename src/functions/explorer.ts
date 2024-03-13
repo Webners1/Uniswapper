@@ -225,6 +225,10 @@ const chains: ChainObject = {
     link: 'https://blockexplorer.avax.boba.network',
     builder: explorers.blockscout,
   },
+  [ChainId.BIT]: {
+    link: 'https://blockexplorer.avax.boba.network',
+    builder: explorers.blockscout,
+  },
   // [ChainId.ZETA]: {
   //   link: 'https://explorer.zetachain.com',
   //   builder: explorers.etherscan,

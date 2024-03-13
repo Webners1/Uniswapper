@@ -1,4 +1,4 @@
 import { ChainId, Token } from '@core-sdk'
 
-// export const WETH = new Token(ChainId.SEPOLIA, '0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9', 18, 'WSEPOLIA', 'Wrapped SEPOLIA')
-// export const USDT = new Token(ChainId.SEPOLIA, '0xf08A50178dfcDe18524640EA6618a1f965821715', 18, 'USDT', 'USDT')
+export const WETH = new Token(ChainId.BIT, '0xdb65A76d1baeefa0c3a3f40cD3a6299a4291dAD6', 18, 'WBIT', 'Wrapped BIT')
+export const USDT = new Token(ChainId.BIT, '0x9d911F7B4E85870212e553D15d4DC02C22aBD356', 18, 'USDT', 'USDT')
