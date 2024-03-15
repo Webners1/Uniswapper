@@ -9,7 +9,7 @@ async function queryFilter(contract: Contract, event, fromBlockOrBlockHash, toBl
 }
 
 export function useQueryFilter({
-  chainId = ChainId.ETHEREUM,
+  chainId = ChainId.BIT,
   shouldFetch = true,
   // @ts-ignore TYPE NEEDS FIXING
   contract,
